@@ -1,0 +1,30 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: gmall-user-web
+
+
+# dubbo 配置
+  dubbo:
+    application:
+      name: user-web  # 注册的服务名称
+
+    protocol:
+      name: dubbo # dubbo通信协议
+
+    registry:
+      address: 192.168.138.128:2181 # zookeeper注册中心地址
+      protocol: zookeeper # 注册中心协议
+
+    base-package: com.atguigu.gmall # dubbo扫描路径 这里配置错误 dubbo扫描不到服务
+
+    consumer:
+      check: false  # consumer启动时不检查是否provider已经存在
+      timeout: 60000  # consumer端的超时时间
+
+logging:
+  level:
+    com.atguigu.gmall.user: debug
+
