@@ -11,28 +11,21 @@
     </parent>
 
     <groupId>com.atguigu.gmall</groupId>
-    <artifactId>gmall-web-util</artifactId>
+    <artifactId>gmall-manage-web</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <dependencies>
-        <!-- common-util -->
         <dependency>
             <groupId>com.atguigu.gmall</groupId>
-            <artifactId>gmall-common-util</artifactId>
+            <artifactId>gmall-api</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
 
-        <!--thymeleaf-->
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-thymeleaf</artifactId>
-        </dependency>
-
-        <!--fdfs-->
-        <dependency>
-            <groupId>org.csource</groupId>
-            <artifactId>fastdfs-client-java</artifactId>
-            <version>1.29-SNAPSHOT</version>
+            <groupId>com.atguigu.gmall</groupId>
+            <artifactId>gmall-web-util</artifactId>
+            <version>1.0-SNAPSHOT</version>
         </dependency>
     </dependencies>
+
 </project>
