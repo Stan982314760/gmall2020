@@ -10,7 +10,7 @@ public class PmsProductSaleAttr implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column
-    String id ;
+    String id;
 
     @Column
     String productId;
@@ -21,6 +21,9 @@ public class PmsProductSaleAttr implements Serializable {
     @Column
     String saleAttrName;
 
+    @Transient
+    List<PmsProductSaleAttrValue> spuSaleAttrValueList;
+
 
     public List<PmsProductSaleAttrValue> getSpuSaleAttrValueList() {
         return spuSaleAttrValueList;
@@ -30,8 +33,6 @@ public class PmsProductSaleAttr implements Serializable {
         this.spuSaleAttrValueList = spuSaleAttrValueList;
     }
 
-    @Transient
-    List<PmsProductSaleAttrValue> spuSaleAttrValueList;
 
     public String getId() {
         return id;

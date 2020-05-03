@@ -1,14 +1,14 @@
 server:
-  port: 8081
+  port: 8072
 
 spring:
   application:
-    name: gmall-manage-web
+    name: gmall-item-service
 
 # dubbo 配置
   dubbo:
     application:
-      name: manage-web  # 注册的服务名称
+      name: item-service  # 注册的服务名称
 
     protocol:
       name: dubbo # dubbo通信协议

@@ -2,7 +2,7 @@
 
 2020.04.26 第一天
     
-    gmall-user test ok 
+       gmall-user test ok 
     
 2020.04.27 项目结构重构
     
@@ -23,3 +23,13 @@
             而aop的核心就是生成代理对象和并拦截代理对象运行目标方法！
             @EnableAspectJAutoProxy(expose = true) AopContext.currentProxy()
        3.保存数据比如id 多线程环境下 为了线程同步 要用ThreadLocal进行数据保存
+       
+ 2020.05.01
+        
+       1.通过封装spu对应的sku销售属性的哈希表 key为saleAttrValueId value为skuInfoId 便于页面直接锁定sku 少了数据库io
+       2、redis缓存的引入 雷神视频有感
+        缓存穿透、雪崩、击穿问题是什么？如何解决？
+        分布式锁、及redisson使用 锁的粒度
+        分布式缓存一致性解决方案
+       3、雷神视频 数据异构解决方案
+        

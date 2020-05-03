@@ -11,7 +11,20 @@ spring:
     password: 123
     driver-class-name: com.mysql.jdbc.Driver
 
-# dubbo 配置
+  # thymeleaf 配置
+  thymeleaf:
+    cache: false
+
+  # redis
+  redis:
+    host: 192.168.138.128
+    port: 6379
+    jedis:
+      pool:
+        max-idle: 8
+        max-active: 16
+
+  # dubbo 配置
   dubbo:
     application:
       name: manage-service  # 注册的服务名称
@@ -28,6 +41,7 @@ spring:
     consumer:
       check: false
       timeout: 6000
+
 
 logging:
   level:

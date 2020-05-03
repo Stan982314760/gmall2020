@@ -12,4 +12,8 @@ public interface SkuService {
     List<PmsProductImage> spuImageList(String spuId);
 
     void saveSkuInfo(PmsSkuInfo pmsSkuInfo);
+
+    PmsSkuInfo getSkuInfo(String skuId);
+
+    String getSkuJsonStr(String productId);
 }
